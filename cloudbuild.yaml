@@ -1,7 +1,13 @@
 options:
    logging: CLOUD_LOGGING_ONLY
 steps:
-    echo "Build the Docker image YOLIMAR"
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo "Iniciando construcción del frontend..."
+        
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/proven-sum-435500-p1/flask-backend:$SHORT_SHA', '.']
   - name: 'gcr.io/cloud-builders/docker'
