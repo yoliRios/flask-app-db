@@ -6,8 +6,8 @@ steps:
     args:
       - '-c'
       - |
-        echo "Iniciando construcción del frontend..."
-        
+        echo "Building Backend..."
+
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/proven-sum-435500-p1/flask-backend:$SHORT_SHA', '.']
   - name: 'gcr.io/cloud-builders/docker'
