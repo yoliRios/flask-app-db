@@ -3,16 +3,19 @@ import psycopg2
 from google.cloud import storage
 from flask_cors import CORS
 import os
+import dotenv
 
 app = Flask(__name__)
+
+dotenv.load_dotenv()
 
 CORS(app)
 
 # Fetch environment variables
-db_user = os.getenv('DB_USER', 'DB_USER')
-db_pass = os.getenv('DB_PASS', 'DB_PASSWORD')
-db_name = os.getenv('DB_NAME', 'DB_NAME')
-db_host = os.getenv('DB_HOST', 'DB_HOST')  # Localhost if using Cloud SQL Proxy
+db_user = os.getenv('DB_USER')
+db_pass = os.getenv('DB_PASSWORD')
+db_name = os.getenv('DB_NAME')
+db_host = os.getenv('DB_HOST') # Localhost if using Cloud SQL Proxy
 
 BUCKET_NAME = "c0904675-bucket"
 
