@@ -44,7 +44,7 @@ spec:
         app: flask-backend-app
     spec:
       containers:
-        - name: flask-backend
+        - name: flask-backend-app
           image: gcr.io/proven-sum-435500-p1/flask-backend:latest
           ports:
             - containerPort: 5000
