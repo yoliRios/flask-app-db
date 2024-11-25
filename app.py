@@ -17,6 +17,8 @@ db_pass = os.getenv('DB_PASSWORD')
 db_name = os.getenv('DB_NAME')
 db_host = os.getenv('DB_HOST') # Localhost if using Cloud SQL Proxy
 
+os.environ["GCLOUD_PROJECT"] = "proven-sum-435500-p1"
+
 BUCKET_NAME = "c0904675-bucket"
 
 # Database connection setup (change according to your GCP PostgreSQL details)
