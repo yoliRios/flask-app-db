@@ -94,7 +94,7 @@ def upload_file():
 @app.route('/')
 def index():
     return '''
-    <h1>Select a File Please</h1>
+    <h1>Select a File</h1>
     <form method="POST" action="/upload" enctype="multipart/form-data">
       <input type="file" name="file">
       <input type="submit">
