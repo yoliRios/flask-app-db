@@ -1,0 +1,23 @@
+options:
+   logging: CLOUD_LOGGING_ONLY
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/proven-sum-435500-p1/flask-backend:$SHORT_SHA', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/proven-sum-435500-p1/flask-backend:$SHORT_SHA']
+  - name: 'gcr.io/cloud-builders/kubectl'
+    args:
+      - 'set'
+      - 'image'
+      - 'deployment/flask-backend-deployment'
+      - 'flask-backend-app=gcr.io/proven-sum-435500-p1/flask-backend:$SHORT_SHA'
+      - '--namespace=flask-backend-ns'
+    env:
+      - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER_NAME}'
+images:
+  - 'gcr.io/proven-sum-435500-p1/flask-backend:$SHORT_SHA'
+substitutions:
+  _ZONE: 'us-central1-a'
+  _CLUSTER_NAME: 'my-flask-cluster'
+

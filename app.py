@@ -9,15 +9,12 @@ app = Flask(__name__)
 CORS(app)
 
 # Fetch environment variables
-db_user = os.getenv('DB_USER', 'admin1')
-db_pass = os.getenv('DB_PASS', 'test123')
-db_name = os.getenv('DB_NAME', 'test-db')
-db_host = os.getenv('DB_HOST', '34.46.69.185')  # Localhost if using Cloud SQL Proxy
+db_user = os.getenv('DB_USER', 'DB_USER')
+db_pass = os.getenv('DB_PASS', 'DB_PASS')
+db_name = os.getenv('DB_NAME', 'DB_NAME')
+db_host = os.getenv('DB_HOST', 'DB_HOST')  # Localhost if using Cloud SQL Proxy
 
-os.environ["GCLOUD_PROJECT"] = "proven-sum-435500-p1"
 BUCKET_NAME = "c0904675-bucket"
-
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.getenv('CREDENTIALS', "./application_default_credentials.json")
 
 # Database connection setup (change according to your GCP PostgreSQL details)
 def connect_db():
@@ -97,7 +94,7 @@ def upload_file():
 @app.route('/')
 def index():
     return '''
-    <h1>Select a File</h1>
+    <h1>Select a File Please</h1>
     <form method="POST" action="/upload" enctype="multipart/form-data">
       <input type="file" name="file">
       <input type="submit">

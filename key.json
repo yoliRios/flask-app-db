@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "proven-sum-435500-p1",
+  "private_key_id": "d7d0e4a1d1bc1964a45b81c1047d7c0fbc428155",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDVkjzmf9EgFHO0\n4FfeAcHMef9DIkE4vgprlKURKm1N2OHkZspKVYGxlVMsgxkjjVicvCEyFU5olYoV\n52B5Q53w26euxMFPByIjnI6i+LQBxRxJqDjtal8KW2cz8Vs72bVkyuNufUEVMML2\nzaYtnm1lCuEgHj0S2NhTApHuNtyKMejrxZZjJhVl89VA8/cm0Zm8oTNwzCLpQNSz\ndupcDVRgkeANuyXLBLB8ZKm6vCScsnFHnyaas47qICaDp1+OOJIvWBlT5TagCP9m\nhpD7zN2sUgwMIy1xaarsKItaLdg5gVynmRkXplWoEXYDUT1uAhgI/nNKP0a/HVQd\n/8rM2x+BAgMBAAECggEAAO0nJgO44DoEe+It/A7Er16krumX8AoCJ7ADr11lr1pH\nqw7k1Vxq9p6Ad4twnUmievNlibcDfGhwepU4CHifYj1CrECgBcgA3nfiMME8nyYY\nAAFf5gGRogJDh6YLgd5D3JkVHNcOtGZuGbsqljex5JJ+3N29YN68y/nhW1/Eq8Bc\nWY2ijtZBsmL+FQyTwVyzINg7B9h8Q9RjairAcjZFvv4J1Mw0CBcJh5GAc8huF9BF\nK5W9+hwsHNwwtYu2kKIB+9e9BJDlW6mhGGLeeqK9oeb+D8lTJuCYPC0zgfuv3dVY\nFtmcyktq60oN1fiTiRlwu+XEzjBZ0Gep6BHVtzvOkQKBgQDss7C3jQRXPzkm430c\nKklpEGmkclFaBBy2eIlF74uPinSHEdvM9LTIzPAgB6U+ow27w3gudI5fEXMN5SRV\nOW8aTr2r+ZFiGLW/e7rjVFqrGcqsdCeELRT1RbTOMBs0dMBrKE/9yeKKT06DOHtt\nSIsvgy93pipAaP+HH/3EZ84vEQKBgQDm+8byouR0y9jb18bXvTcONJvIL3OJeqT1\nQvol6ResUhP5xF0goF4Evt4gpEeyLjk9QSPkmfThxQECkXyBZhNqKoLM/L96C7LZ\n10dAAgQbl5Nk+JNPLhU7cBBTKjwzS0o7+WQcAbAD0ejdfolV43u/rMYJ4aqlCMhv\n5OTk4aTJcQKBgEFL5KEN7reewkZfFSFS7QNluq7ZtmVtovoXUE8RoN9NI44rOAZX\nLxQBrPA5C7W2x1AXwSyXjLrfFm0r3BUCjgqk1B//7cIw7NpQ6KJTn9t5dvaR6GDH\nCvQKcbE7hhW3a2lkKoTpT2w2KoN6blocXAEUYGDSXu97x5ngEmI+/JrxAoGBANS7\n2JyJh81GHUFEtv7lZrpvm3ZAtbFNwnWcrRSTXFk58unbf0XYTR8jxyLbCqlBRzhy\nMSOO4+m3blm2MqxenczuwC8ZLSSzd5KIYjfCY5QiAv9ArTOEpstqR67AvFclpYYd\nB6V/rGOoRUcSDlyLOeLrti1NqMN8llXvwxxF8WYRAoGAWsd1hxgmOEKkLr15KD/0\npyPgePs+1JoIxUv+M1C7QP/JvZEehsa5rJ/o5wTeEkaQGjVwViCLysv+SlcaoCoj\neeD94AIQ0kQA6D7abIEEX1iiN4aT0v1GHHlm+Ihgq/2yADHwb+WrzeXvVgyVK5UA\nmA/rtDo+p20adXQbG46LQHQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gitlab-deployment-service@proven-sum-435500-p1.iam.gserviceaccount.com",
+  "client_id": "103811408603873989875",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gitlab-deployment-service%40proven-sum-435500-p1.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
