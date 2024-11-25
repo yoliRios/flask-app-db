@@ -10,7 +10,7 @@ CORS(app)
 
 # Fetch environment variables
 db_user = os.getenv('DB_USER', 'DB_USER')
-db_pass = os.getenv('DB_PASS', 'DB_PASS')
+db_pass = os.getenv('DB_PASS', 'DB_PASSWORD')
 db_name = os.getenv('DB_NAME', 'DB_NAME')
 db_host = os.getenv('DB_HOST', 'DB_HOST')  # Localhost if using Cloud SQL Proxy
 
