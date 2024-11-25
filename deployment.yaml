@@ -52,6 +52,9 @@ spec:
                 name: flask-backend-configmap
             - secretRef:
                 name: flask-backend-secrets
+          env:
+           - name: GOOGLE_APPLICATION_CREDENTIALS
+             value: "./key.json"    
       imagePullSecrets:
         - name: gcr-json-key
 
